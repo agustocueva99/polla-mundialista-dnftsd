@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polla Mundialista DNFTSD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🏆 Polla Mundialista DNFTSD</h1>
+    <h3>Pronósticos de la fase de grupos</h3>
+
+    <div class="card">
+      <label for="nombre"><strong>Nombre del participante</strong></label>
+      <input type="text" id="nombre" placeholder="Ingrese su nombre completo">
+    </div>
+
+    <div class="progreso-box">
+      <div class="progreso">
+        <div id="barra"></div>
+      </div>
+      <p id="contador">0 / 72 partidos completados</p>
+    </div>
+
+    <div id="partidos"></div>
+
+    <div class="botones">
+      <button id="btnBorrador" class="btn gris">Guardar borrador</button>
+      <button id="btnEnviar" class="btn azul">Enviar pronóstico</button>
+      <button id="btnLimpiar" class="btn rojo">Limpiar borrador</button>
+    </div>
+
+    <div id="mensaje"></div>
+
+    <form id="formulario" method="POST" target="hidden_iframe" style="display:none;">
+      <input type="hidden" name="payload" id="payload">
+    </form>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  </div>
+
+  <script src="partidos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

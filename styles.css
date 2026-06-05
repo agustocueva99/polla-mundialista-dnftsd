@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.10);
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.card {
+  background: #f9fafc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.grupo {
+  margin-top: 28px;
+  padding: 12px;
+  background: #003f88;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.partido {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.partido h4 {
+  margin-top: 0;
+}
+
+.opciones label {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+
+.progreso-box {
+  margin-bottom: 20px;
+}
+
+.progreso {
+  width: 100%;
+  height: 24px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#barra {
+  height: 100%;
+  width: 0%;
+  background: #28a745;
+  transition: width 0.3s;
+}
+
+#contador {
+  text-align: center;
+  font-weight: bold;
+}
+
+.botones {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 18px;
+  margin: 8px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.azul {
+  background: #0069d9;
+}
+
+.gris {
+  background: #6c757d;
+}
+
+.rojo {
+  background: #dc3545;
+}
+
+#mensaje {
+  display: none;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ok {
+  background: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+@media(max-width: 700px) {
+  .opciones label {
+    display: block;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
